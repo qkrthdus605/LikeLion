@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Example</title>
+  <style>
+    #flex{
+      display: flex;
+      flex-direction: column;
+      height: 100vh; 
+      justify-content: flex-end;
+    }
+
+    .content{
+      border: 1px solid black;
+      width: 70px;
+    }
+  </style>
+</head>
+<body>
+  <div id="flex">
+    <!-- display: block 을 기본적으로 갖게 됨 => 가로화면 전체를 차지하는게 당연!-->
+    <p class="content">Content1</p>
+    <p class="content">Content2</p>
+    <p class="content">Content3</p>
+  </div>
+</body>
+</html>
