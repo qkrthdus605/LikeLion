@@ -13,7 +13,7 @@ def calculate_prime_number(length):
   # is_prime 함수를 사용하면 편하게 코딩할 수 있음
 
   prime_array = [] #소수를 담아 출력할 리스트
-  for i in range(2, 100):
+  for i in range(2, 1000):
     while len(prime_array) < length: 
       if is_prime(i) == True:
         prime_array.append(i)

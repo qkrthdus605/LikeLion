@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Kakao 지도 시작하기</title>
+</head>
+<body>
+  <h1 style="color:blue"> 아이엠 그라운드 자기소개 시작 >_< </h1>
+  <ul> 이름: 김수진 </ul>
+  <ul> 학과: 경희대학교 태권도학과 </ul>
+  <ul> 나이: 24살 </ul>
+  <ul> 취미: 프로스포츠 경기 보기 </ul>
+  <ol> 
+    <li> 운동하기 </li>
+    <li> 청년다방 차돌떡볶이 먹기 </li>
+    <li> LG 트윈스 이기는 경기 보기 </li>
+  </ol>
+  <ul> 모든 개발자들을 우러러보게 되었다. 나는 한낱 미물로서, 더욱 열심히 해야겠다고 결의를 다지는 1시간 반의 여정이었다</ul>
+  <div id="map" style="width:500px;height:400px;"></div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=MyAppKey"></script>
+  <script>
+    var container = document.getElementById('map');
+    var options = {
+      center: new kakao.maps.LatLng(37.24592425213768, 127.07462972418296),
+      level: 3
+    };
+    var map = new kakao.maps.Map(container, options);
+  </script>
+</body>
+</html>

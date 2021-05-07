@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Kakao 지도 시작하기</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <h2 id="title">자기소개</h2>
+  <p>저는 여기 살고 있어요!</p>
+	<div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=MyAppKey"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.226187651857416, 127.19130206219376),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+  <div>
+    <ul>
+      <h3>이름이 뭐에요?</h3>
+      <p>제 이름은 박소연입니다^-^</p>
+      <h3>어디 학과에요??</h3>
+      <p>저는 컴퓨터공학과 코린이입니당</p>
+      <h3>몇 살이에요???</h3>
+      <p>22살입니다!</p>
+      <h3>취미가 뭐에요??</h3>
+      <p>누워서 아메리카노 먹으면서 넷플릭스 보는거 좋아합니당</p>
+      <h3>좋아하는 활동이나 음식 3가지를 알려주세요</h3>
+      <h4 id="favorite">
+        <ol>첫 번째도 민트초코!</ol>
+        <ol>두 번째도 민트초코!!</ol>
+        <ol>세 번째도 민트초코!!!</ol>
+      </h4>
+      <h3>오늘 세션을 진행하면서 느낀점</h3>
+      <p>지금까지 api를 사용해보면서 오늘처럼 빨리 성공적으로 api가 띄어진 건 처음이어서 너무너무 뿌뜻했습니당</p>
+    </ul>
+  </div>
+  
+</body>
+</html>
