@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<style>
+			body {
+				background: rgba(0, 0, 0, 0.75);
+			}
+			.login-box {
+				width: 568px;
+				height: 351px;
+				background: #FFFFFF;
+				padding: 32px;
+				left: 40%;
+				top: 30%;
+				position: absolute;
+			}
+			.input-text {
+				width: 99%;
+				height: 46px;
+				font-size: 16px;
+				line-height: 24px;
+				color: #767676;
+				margin-bottom: 16px;
+			}
+			.close-button {
+				left: 98%;
+				position: relative;
+				margin-bottom: 40px;
+			}
+			.submit-text {
+				background: #FF5A5F;
+				border-radius: 4px;
+				width: 100%;
+				height: 48px;
+				color: #FFFFFF;
+				font-weight: 800;
+				font-size: 16px;
+				margin: 12px 0;
+			}
+			.text-flex {
+				display: flex;
+				font-weight: normal;
+        font-size: 16px;
+				color: #222222;
+				margin-top: 16px;
+			}
+			.signup-text {
+				margin-left: 8px;
+				color: #008489;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 19px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="login-box">
+			<img src="./images/close.svg" class="close-button" />
+			<input placeholder="이메일 주소" class="input-text" />
+			<input placeholder="비밀번호" type="password" class="input-text" />
+			<button type="submit" class="submit-text">로그인</button>
+			<hr />
+			<div class="text-flex">
+				<div>에어비앤비 계정이 없으세요?</div>
+				<div class="signup-text">회원가입</div>
+			</div>
+		</div>
+	</body>
+</html>
